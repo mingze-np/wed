@@ -1,0 +1,141 @@
+/* A fuller, more colourful celebration. Shared behaviours stay in invitation.css. */
+:root{--paper:#fff4e7;--ink:#732d42;--muted:#805366;--accent:#a44355;--line:#ce9ca0;--soft:#f3d4cc;--field-line:#986574;--frame:#bb8b3f}
+.hero-photo-composition{position:relative;min-width:0}
+.floral-inset{position:absolute;width:176px;padding:9px 9px 0;background:#fff4e7;bottom:24px;left:-48px;z-index:2;transform:rotate(-7deg);box-shadow:0 8px 24px #3e243526}
+.floral-inset img{width:100%;height:144px;object-fit:cover;object-position:22% center}
+.floral-inset figcaption{text-align:center;padding:8px 0;font:16px var(--latin);color:#732d42;font-variant-numeric:tabular-nums}
+.date-strip{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 6%;background:var(--ink);color:var(--paper);font:13px var(--serif);position:relative;z-index:1}
+.date-strip time{font:24px var(--latin);font-variant-numeric:tabular-nums;letter-spacing:.08em}
+.hero h1{font-size:clamp(35px,3.7vw,54px)}
+.hero-details{margin-top:26px;font-size:14px}
+.hero-link{padding:12px 22px;min-height:48px;background:var(--ink);color:var(--paper);border:0}
+.hero-link:hover{background:var(--accent);color:var(--paper)}
+.ribbon-flourish{display:block;width:170px;height:44px;color:var(--frame);margin:0 auto 22px}
+.section{padding-top:56px;padding-bottom:56px}
+.section-heading{margin-bottom:24px}
+.section-heading h2{font-size:36px}
+.welcome{display:grid;grid-template-columns:.65fr 1fr;gap:40px;align-items:center;background:var(--soft);max-width:none;padding:40px max(8%,calc((100vw - 1200px)/2))}
+.welcome-art{height:240px;max-width:360px;justify-self:center;width:100%;padding:8px;background:var(--paper);transform:rotate(-3deg)}
+.welcome-art img{width:100%;height:100%;object-fit:cover}
+.welcome-inner{width:100%;text-align:left;max-width:660px;margin:0}
+.welcome h2{font-size:30px;margin-bottom:16px}
+.welcome-text{font-size:17px;line-height:2}
+.signature{margin-top:16px}
+.countdown-band{max-width:none;background:var(--soft);padding:0 8% 32px;gap:16px}
+.countdown-band>p{width:auto}
+.countdown{padding:12px 20px;border:1px solid var(--line);background:var(--paper)}
+.countdown strong{font-size:34px}
+.moments{border:0}
+.photo-grid{grid-template-columns:1.2fr .8fr 1fr;grid-template-rows:240px 240px;gap:16px}
+.photo-0{grid-column:1;grid-row:1/3}.photo-1{grid-column:2;grid-row:1}.photo-2{display:block;grid-column:2;grid-row:2}.photo-3{grid-column:3;grid-row:1/3}
+.photo-tile{border:6px solid var(--paper);outline:1px solid var(--line)}
+.photo-caption{background:#48212dce}
+.wedding-day{padding-top:32px}
+.day-grid{gap:6%;grid-template-columns:.85fr 1.15fr}
+.day-intro{background:var(--ink);color:var(--paper);padding:32px;align-self:stretch;display:flex;flex-direction:column;justify-content:center;position:relative}
+.day-intro:before{content:'';position:absolute;inset:12px;border:1px solid currentColor;opacity:.45;pointer-events:none}
+.day-intro h2{font-size:34px;margin-bottom:18px}
+.big-date>span{color:inherit}.big-date strong{font-size:80px}.big-date p{font-size:14px}
+.day-intro .text-button{align-self:flex-start}.day-intro .text-button:hover{color:var(--paper)}
+.schedule-row{padding:20px 0}.schedule-row h3{font-size:21px}.schedule-time{font-size:30px}
+.venue-section{padding-bottom:48px;gap:0}
+.venue-copy{background:var(--soft);padding:36px;min-height:400px;display:flex;flex-direction:column;justify-content:center}
+.venue-photo{height:100%;min-height:400px}
+.venue-actions{gap:12px}.venue-note{max-width:none}
+.rsvp-section{background:var(--soft);max-width:none;border:0;padding-left:max(8%,calc((100vw - 1200px)/2));padding-right:max(8%,calc((100vw - 1200px)/2))}
+.rsvp-grid{gap:7%}.rsvp-copy{min-width:0}.reply-art{height:210px;margin-bottom:28px;max-width:400px}
+.reply-art img{width:100%;height:100%;object-fit:cover;object-position:30% 48%}
+.rsvp-copy h2{font-size:34px}.local-note{margin-top:20px}
+#rsvp-form{background:var(--paper);padding:32px;align-self:start}
+.closing{padding:48px 24px;background:var(--ink);color:var(--paper);border:0}
+.closing h2{font-size:40px}.closing .text-button:hover{color:var(--paper)}
+/* Rose and champagne: a framed invitation beside layered photographs. */
+.ivory .invite-nav{background:#f3d4cc}
+.ivory-hero{background:#f3d4cc;padding:32px 6% 0;gap:26px 7%;grid-template-columns:1fr 1fr}
+.ivory-hero .hero-copy{position:relative;background:var(--paper);padding:38px 30px;text-align:center;border:1px solid var(--frame);outline:1px solid var(--frame);outline-offset:-9px}
+.ivory-hero h1{font-size:45px}.ivory-hero .hero-invitation{margin:16px 0;color:var(--muted)}
+.ivory-hero .invitation-title{margin-top:24px;font-size:24px}
+.ivory-hero .hero-details{margin-top:24px}
+.ivory-hero .hero-photo-composition{padding:0 0 26px 22px}
+.ivory-hero .arch-photo{max-width:none;padding:9px;background:var(--paper);border-radius:240px 240px 0 0;border:1px solid var(--frame)}
+.ivory-hero .arch-photo>img{height:560px}
+.ivory-hero .floral-inset{left:-16px;bottom:6px;transform:rotate(-8deg)}
+.ivory-hero .date-strip{margin:0 -6.82%;padding:15px 7%}
+.ivory .photo-3 img{object-position:25% center}
+/* Emerald garden: sunlit green, butter yellow, and floral photography. */
+.garden{--paper:#fffbe9;--ink:#14543c;--muted:#416343;--accent:#28774c;--line:#91ad77;--soft:#dce8a8;--field-line:#668452;--frame:#e4bc44}
+.garden .invite-nav{background:#dce8a8}
+.garden-hero{background:#14543c;grid-template-columns:.82fr 1.18fr;gap:0}
+.garden-hero .hero-copy{padding:34px 10%;position:relative}
+.garden-hero h1{font-size:48px}.garden-hero h1 i{color:#f3cf6f}
+.garden-hero .english-names{color:#f7dda0}.garden-hero .hero-invitation{font-size:22px;margin:24px 0}
+.garden-hero .hero-details{font-size:13px;margin-top:24px;color:#fffbe9}
+.garden-hero .hero-link{background:#f5d778;color:#1d4c34}.garden-hero .hero-link:hover{background:#fff0ab;color:#1d4c34}
+.garden-photo{height:640px;padding:22px 22px 22px 0}
+.garden-photo img{border-radius:210px 210px 0 0;object-position:center 54%}
+.garden-hero .floral-inset{left:-40px;bottom:20px;width:174px;background:#f5d778;transform:rotate(6deg)}
+.garden-hero .floral-inset figcaption{color:#1d4c34}
+.garden-hero .date-strip{background:#f5d778;color:#1d4c34}
+.garden .welcome-inner{display:block}.garden .welcome-art{border-radius:160px 160px 0 0;transform:rotate(3deg)}.garden .welcome-art img{border-radius:150px 150px 0 0}
+.garden .photo-grid{grid-template-columns:1.2fr .8fr 1fr;grid-template-rows:230px 230px;gap:16px}
+.garden .photo-0{grid-column:1;grid-row:1/3}.garden .photo-1{display:block;grid-column:2;grid-row:1;height:100%}.garden .photo-2{grid-column:2;grid-row:2}.garden .photo-3{grid-column:3;grid-row:1/3;height:100%;align-self:stretch}
+.garden .photo-caption{background:#14543cdd}.garden .day-grid{grid-template-columns:.85fr 1.15fr}.garden .closing{background:#14543c;color:#fffbe9}
+/* Editorial: cobalt ink, yellow stock, and a photographic contact sheet. */
+.editorial{--paper:#fffdf0;--ink:#2346af;--muted:#455b86;--accent:#173484;--line:#a6b4d5;--soft:#e0e7f8;--field-line:#7584a1;--frame:#2346af}
+.editorial .invite-nav{background:#f6d876;color:#203d93}
+.editorial-hero{background:#2346af;padding:22px 4% 0}
+.editorial-mast{font-size:88px;color:#fff2b9;border-bottom:1px solid #91a5e0;padding:0 0 16px}
+.editorial-cover{grid-template-columns:.85fr 1.15fr;gap:20px;padding:20px 0}
+.editorial-cover .hero-copy{padding:28px;background:#f6d876;color:#183b9a}
+.editorial-cover h1{font-size:40px}.editorial-cover h1 i{color:#183b9a}
+.editorial-cover .hero-invitation{font-size:21px;margin:24px 0}.editorial-cover .hero-details{font-size:13px;margin-top:auto}
+.editorial-cover .hero-link{background:#2346af;color:#fffbea}
+.editorial-photo{height:470px;border:8px solid #fffdf0}
+.editorial-photo>img{object-position:center 41%}
+.editorial-hero .floral-inset{width:142px;bottom:20px;left:auto;right:-10px;transform:rotate(7deg);background:#fffdf0}
+.editorial-hero .floral-inset img{height:118px;filter:grayscale(1)}.editorial-hero .floral-inset figcaption{color:#2346af;font-size:16px}
+.editorial-hero .date-strip{margin:0 -4.35%;background:#f6d876;color:#183b9a;padding:14px 5%}
+.editorial .welcome-inner{display:block}.editorial .welcome-art{transform:rotate(-4deg)}.editorial .welcome-art img{filter:grayscale(1)}
+.editorial .countdown-band{border-bottom:1px solid #a6b4d5}
+.editorial .photo-grid{grid-template-columns:1.2fr .8fr 1fr;grid-template-rows:230px 230px;gap:16px}
+.editorial .photo-0{grid-column:1;grid-row:1/3}.editorial .photo-1{grid-column:2;grid-row:1;height:100%}.editorial .photo-2{display:block;grid-column:2;grid-row:2}.editorial .photo-3{grid-column:3;grid-row:1/3}
+.editorial .photo-caption{background:#2346afed}.editorial .day-intro{background:#f6d876;color:#183b9a}.editorial .day-intro .text-button:hover{color:#183b9a}
+.editorial .rsvp-section{border:0}.editorial .reply-art img{filter:grayscale(1)}.editorial .closing{background:#2346af;color:#fffbea;text-align:center;padding-left:24px}
+/* Vermilion and gold: framed red paper, a gold date band and a warm portrait. */
+.rouge{--paper:#fff2d9;--ink:#a32620;--muted:#81513a;--accent:#87221b;--line:#cb9d64;--soft:#f7d69b;--field-line:#a36a48;--frame:#f4c66b}
+.rouge .invite-nav{background:#f7d69b;color:#8f251b}
+.rouge-hero{background:#b32b24;padding:24px 24px 0;grid-template-columns:1fr 1fr;gap:20px;color:#fff2d9}
+.rouge-copy{padding:26px 9% 36px;border:1px solid #f4c66b;outline:1px solid #f4c66b;outline-offset:-9px;display:flex;flex-direction:column;justify-content:center;text-align:center}
+.double-happiness{font-size:96px;color:#f4c66b;margin:0 0 20px}
+.rouge-hero h1{font-size:42px}.rouge-hero h1 i{color:#f4c66b}
+.rouge-hero .hero-invitation{font-size:17px;margin:20px 0}.rouge-hero .hero-details{font-size:14px;margin:22px 0}
+.rouge-hero .hero-link{background:#f4c66b;color:#80251c}.rouge-hero .hero-link:hover{background:#ffe2a0;color:#80251c}
+.rouge-imprint{right:18px;top:24px;color:#ffe2a0}
+.rouge-image{height:600px;min-height:0;padding:9px;border:1px solid #f4c66b}
+.rouge-image>img{height:100%;object-position:center 42%}
+.rouge-hero .floral-inset{bottom:20px;left:-22px;width:158px;background:#f7d69b;transform:rotate(-6deg)}
+.rouge-hero .floral-inset img{height:112px}.rouge-hero .floral-inset figcaption{color:#87221b}
+.rouge-hero .date-strip{margin:0 -24px;background:#f4c66b;color:#80251c;padding:16px 6%}
+.rouge .welcome-inner{display:block;text-align:left;width:100%;padding:0;border:0}.rouge .welcome-art{transform:rotate(-3deg)}
+.rouge .photo-grid{grid-template-columns:1.2fr .8fr 1fr;grid-template-rows:240px 240px;gap:16px}
+.rouge .photo-tile{border-color:#f7d69b}.rouge .photo-caption{background:#a32620e6}
+.rouge .day-intro{background:#b32b24;color:#fff2d9}.rouge .day-intro:before{color:#f4c66b}
+.rouge .closing{background:#b32b24;color:#fff2d9}
+@media(max-width:1100px){
+.ivory-hero{padding:28px 5% 0;gap:24px 5%}.ivory-hero .hero-copy{padding:26px 20px}.ivory-hero h1{font-size:34px}.ivory-hero .arch-photo>img{height:530px}.ivory-hero .date-strip{margin:0 -5.56%}.floral-inset{width:145px}.floral-inset img{height:120px}.ribbon-flourish{width:140px;margin-bottom:16px}.garden-hero h1{font-size:42px}.garden-hero .hero-copy{padding:32px 10%}.garden-photo{height:600px}.editorial-mast{font-size:74px}.editorial-cover h1{font-size:32px}.editorial-cover .hero-copy{padding:24px}.rouge-hero h1{font-size:34px}.rouge-copy{padding:24px 8%}.venue-copy{padding:28px}.date-strip{font-size:12px}.photo-grid{grid-template-rows:220px 220px}.rsvp-grid{gap:5%}#rsvp-form{padding:24px}
+}
+@media(max-width:760px){
+.hero h1{font-size:32px}.hero-details{font-size:13px}.hero-link{font-size:13px;min-height:46px;padding:12px 22px}
+.hero-photo-composition{width:100%;min-width:0}.floral-inset{width:132px;padding:7px 7px 0;left:0;bottom:8px}.floral-inset img{height:105px}.floral-inset figcaption{font-size:15px;padding:6px 0}
+.date-strip{padding:14px 6%;gap:8px;flex-wrap:wrap;justify-content:center;text-align:center;font-size:11px}.date-strip time{font-size:22px}.date-strip>span:first-child{display:none}
+.ivory-hero{padding:22px 6% 0;grid-template-columns:1fr;gap:24px}
+.ivory-hero .hero-copy{padding:26px 18px}.ribbon-flourish{height:32px;width:140px;margin-bottom:14px}.ivory-hero h1{font-size:33px}.ivory-hero .invitation-title{font-size:20px;margin:18px 0 0}.ivory-hero .hero-invitation{margin:12px 0}.ivory-hero .hero-details{margin:18px 0}.ivory-hero .hero-photo-composition{padding:0 8px 24px 24px}.ivory-hero .arch-photo{max-width:none;padding:7px}.ivory-hero .arch-photo>img{height:380px}.ivory-hero .floral-inset{left:-4px;bottom:8px;width:132px}.ivory-hero .date-strip{margin:0 -6.82%}
+.garden-hero{grid-template-columns:1fr}.garden-hero .hero-photo-composition{order:0;padding:0 18px 28px 36px}.garden-hero .hero-copy{order:0;padding:32px 8% 24px}.garden-hero h1{font-size:33px}.garden-hero h1>span,.garden-hero h1 i{display:inline}.garden-hero h1 i{font-size:27px;padding:0 8px}.garden-hero .english-names{margin-top:5px}.garden-hero .hero-invitation{font-size:18px;margin:20px 0}.garden-hero .hero-invitation br{display:none}.garden-hero .hero-details{margin:18px 0}.garden-photo{height:380px;padding:0;order:0}.garden-photo img{border-radius:170px 170px 0 0}.garden-hero .floral-inset{width:126px;left:12px;bottom:10px}.garden-hero .floral-inset img{height:100px}.garden-hero .date-strip{order:1}
+.editorial-hero{padding:20px 6% 0}.editorial-mast{font-size:44px;padding-bottom:15px}.editorial-cover{grid-template-columns:1fr;padding-top:18px;gap:20px}.editorial-cover .hero-copy{padding:24px}.editorial-cover h1{font-size:30px}.editorial-cover .hero-invitation{font-size:18px;margin:20px 0}.editorial-cover .hero-invitation br{display:none}.editorial-cover .hero-details{margin:4px 0 18px}.editorial-hero .hero-photo-composition{padding-right:10px;padding-bottom:16px}.editorial-photo{height:380px;border-width:7px}.editorial-hero .floral-inset{right:-4px;width:128px;bottom:0}.editorial-hero .floral-inset img{height:102px}.editorial-hero .date-strip{margin:0 -6.82%;padding:14px 6%}
+.rouge-hero{grid-template-columns:1fr;padding:20px 6% 0;gap:20px}.rouge-copy{padding:28px 18px}.double-happiness{font-size:80px;margin-bottom:18px}.rouge-hero h1{font-size:32px}.rouge-hero .hero-invitation{font-size:16px;margin:18px 0}.rouge-hero .hero-details{font-size:13px;margin:18px 0}.rouge-imprint{font-size:12px;right:16px;top:20px}.rouge-hero .hero-photo-composition{padding-left:14px;padding-bottom:20px}.rouge-image{height:450px;padding:7px}.rouge-hero .floral-inset{width:130px;left:-3px;bottom:8px}.rouge-hero .floral-inset img{height:100px}.rouge-hero .date-strip{margin:0 -6.82%;padding:14px 6%}
+.section{padding:36px 6%}.welcome{display:grid;grid-template-columns:100px 1fr;gap:20px;padding:32px 6% 22px;align-items:center}.welcome-art{height:170px;padding:5px;width:100%}.welcome h2,.garden .welcome h2,.rouge .welcome h2{font-size:25px;margin-bottom:12px}.welcome-text{font-size:14px;line-height:1.9}.signature{font-size:11px}.welcome-inner,.garden .welcome-inner,.editorial .welcome-inner{display:block}.countdown-band{padding:0 6% 28px;gap:10px}.countdown-band>p{width:100%}.countdown{padding:10px 14px;gap:8px}.countdown strong{font-size:29px}.countdown-band .text-button{margin:0;font-size:12px}.countdown-band .calendar-button{min-height:40px}.section-heading h2{font-size:30px}.section-heading{margin-bottom:20px}
+.photo-grid,.garden .photo-grid,.editorial .photo-grid,.rouge .photo-grid{grid-template-columns:1fr 1fr;grid-template-rows:250px 180px;gap:12px}.photo-tile{border-width:4px}.photo-0,.garden .photo-0,.editorial .photo-0,.rouge .photo-0{grid-column:1;grid-row:1}.photo-1,.garden .photo-1,.editorial .photo-1,.rouge .photo-1{display:block;grid-column:2;grid-row:1;height:100%}.photo-2,.garden .photo-2,.editorial .photo-2,.rouge .photo-2{display:block;grid-column:1;grid-row:2}.photo-3,.garden .photo-3,.editorial .photo-3,.rouge .photo-3{grid-column:2;grid-row:2;height:100%}.photo-caption{font-size:11px;padding:7px 9px}.gallery-note{font-size:11px}
+.day-grid,.garden .day-grid{grid-template-columns:1fr;gap:22px}.day-intro{padding:24px}.day-intro h2{font-size:29px;margin-bottom:8px}.big-date strong{font-size:62px}.big-date p{font-size:12px}.day-intro .text-button{font-size:12px}.schedule-row{padding:16px 0;gap:20px}.schedule-time{font-size:27px}.schedule-row h3{font-size:19px}.schedule-row p{font-size:13px}
+.venue-section{padding:0 6% 36px;gap:0}.venue-photo{min-height:0;height:250px}.venue-copy{min-height:0;padding:28px 24px}.venue-copy h2{font-size:26px}.venue-note{margin-top:18px}.venue-actions{gap:12px}.rsvp-grid{gap:24px;grid-template-columns:1fr}.reply-art{height:170px;margin-bottom:24px;max-width:none}.rsvp-copy h2{font-size:30px}.rsvp-copy>p{font-size:14px}.local-note{font-size:11px;margin-top:16px}#rsvp-form{padding:24px 20px}.form-row{gap:12px}.closing,.editorial .closing{padding:36px 6%;text-align:center}.closing h2,.editorial .closing h2{font-size:30px}.invite-footer{padding:24px 6%}
+}
+@media(max-width:380px){.hero h1,.ivory-hero h1,.garden-hero h1,.rouge-hero h1{font-size:28px}.hero h1 i{font-size:24px}.editorial-mast{font-size:37px}.editorial-cover h1{font-size:27px}.editorial-cover .hero-copy{padding:20px}.welcome{grid-template-columns:80px 1fr;gap:16px}.welcome-art{height:150px}.welcome-text{font-size:13px}.welcome h2{font-size:24px}.countdown{gap:6px;padding:10px}.countdown strong{font-size:27px}.photo-grid,.garden .photo-grid,.editorial .photo-grid,.rouge .photo-grid{grid-template-rows:220px 160px}#rsvp-form{padding:20px 16px}.venue-copy{padding:24px 20px}}
